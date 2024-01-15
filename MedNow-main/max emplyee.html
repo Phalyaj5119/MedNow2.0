@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login | SignUp</title>
+    <style>
+        body {
+	background-image: url(Now\ \(5\).jpg);
+	background-repeat: no-repeat;
+}
+    /* Reset default browser styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Set styles for the header */
+header {
+	background-color: #24bf93;
+	color: #fff;
+	padding: 10px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 35px;
+}
+
+nav ul {
+	align-items: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 40px;
+}
+
+nav ul li a {
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Set styles for the main content */
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+section h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+section ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.container {
+            background-color: #9ee7c4;
+            padding: 50px;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: max-content;
+            border-radius: 10px;
+            margin: 8% auto;
+        }
+
+        label {
+            color: rgb(5, 5, 5);
+        }
+
+        #uname,
+        #pass {
+            width: 300px;
+            font: 20px;
+            height: 20px;
+            padding: 4px;
+            border-radius: 15px;
+        }
+
+        #submit {
+            font-size: medium;
+            padding: 10px 25px 10px;
+            border: none;
+            background-color: #7a83ff;
+            border-radius: 25px;
+        }
+
+        #submit:hover {
+            background-color: #6269cc;
+            border-radius: 15px;
+            padding: 5px;
+        }
+
+        .error {
+            font-size: small;
+            color: red;
+            height: 18px;
+        }
+
+        h5 {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .clip-text {
+            background: url(cool-aesthetic.gif);
+            background-size: cover;
+            background-position: center;
+
+            -webkit-background-clip: text;
+            color: transparent; // set to transparent, otherwise won't see the background
+
+            width: 300px;
+            height: 100px;
+            box-sizing: border-box;
+            font-size: 58px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            flex-shrink: 0;
+        }
+        img {
+             width: 100px;
+             height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+			<div class="clip-text">
+			  Welcome To MedNow
+			</div>
+        <br>
+	<center>
+		<nav>
+			<ul>
+				<li><a href="MAIN MEDNOW PAGE.html">Home</a></li>
+				<li><a href="max emplyee.html">Login</a></li>
+			    <li><a href="about.html">About Us</a></li>
+			</ul>
+		</nav>
+    </center>
+	</header>
+
+    <br>
+    <div class="container">
+        <label for="name">Username: </label><br>
+        <input type="text" id="uname">
+        <div class="error">
+            <span id="unameError"></span>
+        </div>
+        <label for="pass">Password: </label><br>
+        <input type="password" id="pass">
+        <div class="error">
+            <span id="passError"></span>
+        </div>
+        <center>
+            <button id="submit" onclick="authenticate()">Login</button><br><br>
+            <h5> Don't have Account? </h5>
+            <br>
+            <h5>
+            <a href="reg.html">Sign Up!</a></h5>
+        </center>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

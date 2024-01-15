@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | MedNOW</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+	background-image: url(Now\ \(5\).jpg);
+	background-repeat: no-repeat;
+}
+
+
+        header {
+	background-color: #24bf93;
+	color: #fff;
+	padding: 10px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 35px;
+}
+
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .error {
+            font-size: medium;
+            color: red;
+            height: 18px;
+        }
+
+        .Acontainer {
+            background-color: #9ee7c4;
+            padding: 50px;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: max-content;
+            border-radius: 15px;
+            margin: 80px auto;
+            color: rgb(195, 71, 71);
+        }
+
+        .inp {
+            width: 300px;
+            font: 20px;
+            height: 20px;
+            padding: 3px;
+            border-radius: 10px;
+        }
+
+        .clip-text {
+            background: url(cool-aesthetic.gif);
+            background-size: cover;
+            background-position: center;
+
+            -webkit-background-clip: text;
+            color: transparent; // set to transparent, otherwise won't see the background
+
+            width: 300px;
+            height: 100px;
+            box-sizing: border-box;
+            font-size: 58px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            flex-shrink: 0;
+        }
+
+        button {
+            padding: 5px 15px 5px;
+            border: none;
+            background-color: #7a83ff;
+            font-size: medium;
+            border-radius: 15px;
+        }
+
+        button:hover {
+            background-color: #6269cc;
+        }
+
+        label {
+            color: rgb(5, 5, 5);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="clip-text">
+            Welcome To MedNow
+        </div>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="MAIN MEDNOW PAGE.html">Home</a></li>
+                <li><a href="max emplyee.html">Login</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Acontainer">
+        <label for="name">Name: </label><br>
+        <input type="text" id="name" class="inp">
+        <div class="error">
+            <span class="error" id="nameError"></span>
+        </div>
+        <label for="uname">Username: </label><br>
+        <input type="text" id="uname" class="inp">
+        <div class="error">
+            <span class="error" id="unameError"></span>
+        </div>
+        <label for="pass">Password: </label><br>
+        <input type="password" id="pass" class="inp">
+        <div class="error">
+            <span class="error" id="passError"></span>
+        </div>
+        <label for="cpass">Confirm Password: </label><br>
+        <input type="password" id="cpass" class="inp">
+        <div class="error">
+            <span class="error" id="cpassError"></span>
+        </div>
+        <center>
+            <button onclick="validate()">Sign Up!</button>
+        </center>
+    </div>
+    <script src="validate.js"></script>
+</body>
+
+</html>

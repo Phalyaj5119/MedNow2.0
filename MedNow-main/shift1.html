@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>MedNow</title>
+    </head>
+    <style>
+        body {
+            background-image: url(types.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        *{
+        border: 0px;
+        margin: 0px;
+    }
+        header {
+	background-color: #02052f;
+	color: #fff;
+	padding: 20px;
+        }
+
+        #floating-button {
+			display: block;
+            margin: 0 auto;
+            margin-left: 475px;
+		}
+
+		#floating-button img {
+			display: block;
+			width: 500px;
+			height: 200px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			transition: all 0.3s ease-in-out;
+			
+		}
+
+		#floating-button img:hover {
+			transform: scale(1.2);
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+		}
+        .custom-text {
+            font-size: 20px;
+            background-color: #ffffff5e;
+        }
+
+        @keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.clip-text {
+  background: url(cool-aesthetic.gif);
+  background-size: cover;
+  background-position: center;
+  
+  -webkit-background-clip: text;
+  color: transparent; // set to transparent, otherwise won't see the background
+  
+  width: 300px;
+  height: 100px;
+  box-sizing: border-box;
+  font-size: 58px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  flex-shrink: 0;
+}
+    </style>
+    <body>
+        <header>
+        <div class="container">
+			<div class="clip-text">
+			  Welcome To MedNow
+			</div>
+		  </div>
+        </header>
+        <br>
+        <br>
+        <center><p class="custom-text">SELECT YOUR ASSOCCIATED ORGANIZATION</p></center>
+        <br>
+        <br>
+        <br>
+        <a id="floating-button" href="table.html">
+        <img src="max.jpg" alt="Floating Button">
+        </a>
+        <br>
+        <br>
+        <a id="floating-button" href="table.html">
+        <img src="fortis.jpg" alt="Floating Button">
+        </a>
+        <br>
+        <br>
+        <a id="floating-button" href="table.html">
+        <img src="healing.jpg" alt="Floating Button">
+        </a>
+    </body>
+</html>

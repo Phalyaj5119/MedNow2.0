@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shifts</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        *{
+            border: 0px;
+            margin: 0px;
+        }
+        h1 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.staff-name {
+  font-weight: bold;
+}
+
+.shift {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.off {
+  background-color: #f5f5f5;
+  color: #999;
+}
+
+.morning {
+  background-color: #eaf7ee;
+  color: #007f46;
+}
+
+.evening {
+  background-color: #f4edeb;
+  color: #b56d4d;
+}
+    </style>
+</head>
+<style>
+    header {
+	background-color: #02052f;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 36px;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.clip-text {
+  background: url(cool-aesthetic.gif);
+  background-size: cover;
+  background-position: center;
+  
+  -webkit-background-clip: text;
+  color: transparent; // set to transparent, otherwise won't see the background
+  
+  width: 300px;
+  height: 100px;
+  box-sizing: border-box;
+  font-size: 58px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  flex-shrink: 0;
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+			<div class="clip-text">
+			  MedNow Shifts Schedule
+			</div>
+		  </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <h1>Staff Schedule</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Staff Member</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pooja</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>Off</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>Off</td>
+      </tr>
+      <tr>
+        <td>Parag</td>
+        <td>Off</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>Off</td>
+        <td>8:00 AM - 12:00 PM</td>
+      </tr>
+      <tr>
+        <td>Nidhish</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>Off</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>8:00 AM - 12:00 PM</td>
+      </tr>
+      <tr>
+        <td>Shinna</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>8:00 AM - 12:00 PM</td>
+        <td>8:00 AM - 12:00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

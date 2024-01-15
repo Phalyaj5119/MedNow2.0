@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MedNow</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<style>
+ 
+body {
+	background-image: url(Now\ \(4\).jpg);
+	background-repeat: no-repeat;
+}
+    /* Reset default browser styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Set styles for the header */
+header {
+	background-color: #24bf93;
+	color: #fff;
+	padding: 10px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 35px;
+}
+
+nav ul {
+	align-items: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 40px;
+}
+
+nav ul li a {
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Set styles for the main content */
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+section h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+section ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+/* Set styles for the footer */
+footer {
+	background-color: #eee;
+	color: #333;
+	padding: 20px;
+	text-align: center;
+}
+#floating-button {
+			display: block;
+            margin: 0 auto;
+		}
+
+		#floating-button img {
+			display: block;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			transition: all 0.3s ease-in-out;
+			
+		}
+
+		#floating-button img:hover {
+			transform: scale(1.1);
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+		}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	size:30cm;
+}
+.button-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff3c;
+  padding: 10px;
+  width: auto;
+  align-self: center;
+}
+.moving-text-container {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  background-color: #07070755;
+}
+
+.moving-text {
+  color: #fff;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.clip-text {
+  background: url(cool-aesthetic.gif);
+  background-size: cover;
+  background-position: center;
+  
+  -webkit-background-clip: text;
+  color: transparent; // set to transparent, otherwise won't see the background
+  
+  width: 300px;
+  height: 100px;
+  box-sizing: border-box;
+  font-size: 58px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+}
+
+
+
+</style>
+<body>
+	<header>
+		<div class="container">
+			<div class="clip-text">
+
+			  Welcome To MedNow
+			</div>
+		  </div>
+        <br>
+	   <center>
+		<nav>
+			<ul>
+				<li><a href="MAIN MEDNOW PAGE.html"><center>Home</center></a></li>
+				<li><a href="max emplyee.html"><center>Login</center></a></li>
+			    <center><li><a href="about.html">About Us</a></li></center>
+			</ul>
+		</nav>
+	</center>
+	</header>
+				<div class="moving-text-container">
+					<div class="moving-text"> Hello Warriors!! 
+						Marking your presence has never been easier.
+						Go ahead and let us know if u are ready to live another day as a warrior! </div>
+				  </div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<main>
+			<section>
+			<center>
+			<div class="button-bar">
+				<a id="floating-button" href="my cart.html">
+					<img src="med store.png" alt="Floating Button">
+					</a>
+					<center><b><p style="font-family:verdana;">  ACCESS STORE  </p></b></center>
+					<br>
+					<a id="floating-button" href="my cart.html">
+					<img src="cart.png">
+					</a>
+					<center><b><p style="font-family:verdana;">  MY CART  </p></b></center>
+					<br>
+					<a id="floating-button" href="contact page.html">
+					<img src="phone.png">
+					</a>
+					<center><b><p style="font-family:verdana;"> CONTACT INFO </p></b></center>
+				
+			  </div>
+			  </center>
+			  </section>
+			  </main>
+	<footer>
+		<p>&copy; 2023 My Website. All rights reserved.</p>
+	</footer>
+</body>
+</html>

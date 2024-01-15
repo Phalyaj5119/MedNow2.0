@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Pharmacy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    #products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .product {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Pharmacy</h1>
+  </header>
+
+  <div id="products">
+    <!-- Product 1 -->
+    <div class="product">
+      <h2>Medicine A</h2>
+      <p>Description of Medicine A.</p>
+      <p>Price: $10.99</p>
+      <button onclick="addToCart('Medicine A', 10.99)">Add to Cart</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <h2>Medicine B</h2>
+      <p>Description of Medicine B.</p>
+      <p>Price: $15.99</p>
+      <button onclick="addToCart('Medicine B', 15.99)">Add to Cart</button>
+    </div>
+
+    <!-- Add more products as needed -->
+
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Online Pharmacy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function addToCart(productName, price) {
+      alert(`Added ${productName} to cart. Price: $${price}`);
+    }
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | MedNOW</title>
+    <style>
+        * {
+            border: 0px;
+            margin: 0px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #02052f;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #02052f;
+            padding: 50px;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: max-content;
+            border-radius: 10px;
+            margin: 8% auto;
+        }
+
+        label {
+            color: white;
+        }
+
+        #uname,
+        #pass {
+            width: 300px;
+            font: 20px;
+            height: 20px;
+            padding: 3px;
+        }
+
+        #submit {
+            padding: 5px 15px 5px;
+            border: none;
+            background-color: #7a83ff;
+        }
+
+        #submit:hover {
+            background-color: #6269cc;
+        }
+
+        .error {
+            font-size: small;
+            color: red;
+            height: 18px;
+        }
+
+        h5{
+            color: white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1>Admin Panel</h1>
+        </center>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="pract.html">Home</a></li>
+                <li><a href="hospital.html">Manage Shifts</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <label for="name">Username: </label><br>
+        <input type="text" id="uname">
+        <div class="error">
+            <span id="unameError"></span>
+        </div>
+        <label for="pass">Password: </label><br>
+        <input type="password" id="pass">
+        <div class="error">
+            <span id="passError"></span>
+        </div>
+        <center>
+            <button id="submit" onclick="authenticate()">Login</button><br><br>
+            <h5>Don't have Account? <a href="reg.html">Sign Up!</a></h5>
+        </center>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

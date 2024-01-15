@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login | MedNow</title>
+    <style>
+        * {
+            border: 0px;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #02052f;
+            color: #fff;
+            padding: 20px;
+            height: auto;
+        }
+
+        .container {
+            background-color: #02052f;
+            padding: 50px;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: max-content;
+            border-radius: 10px;
+            margin: 8% auto;
+        }
+
+        label {
+            color: white;
+        }
+        img {
+             width: 100px;
+             height: 40px;
+        }
+
+        #uname,
+        #pass {
+            width: 300px;
+            font: 20px;
+            height: 20px;
+            padding: 3px;
+        }
+
+        #submit {
+            padding: 5px 15px 5px;
+            border: none;
+            background-color: #7a83ff;
+        }
+
+        #submit:hover {
+            background-color: #6269cc;
+        }
+
+        .error {
+            font-size: small;
+            color: red;
+            height: 18px;
+        }
+
+        h5 {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .clip-text {
+            background: url(cool-aesthetic.gif);
+            background-size: cover;
+            background-position: center;
+
+            -webkit-background-clip: text;
+            color: transparent; // set to transparent, otherwise won't see the background
+
+            width: 300px;
+            height: 100px;
+            box-sizing: border-box;
+            font-size: 58px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container1">
+            <div class="clip-text">
+                Welcome To Employee Login
+            </div>
+        </div>
+    </header>
+    <br>
+    <center><img src="fortis.jpg"></center>
+    <div class="container">
+        <label for="name">Username: </label><br>
+        <input type="text" id="uname">
+        <div class="error">
+            <span id="unameError"></span>
+        </div>
+        <label for="pass">Password: </label><br>
+        <input type="password" id="pass">
+        <div class="error">
+            <span id="passError"></span>
+        </div>
+        <center>
+            <button id="submit" onclick="authenticate()">Login</button><br><br>
+            <h5>Don't have Account? <a href="reg.html">Sign Up!</a></h5>
+        </center>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

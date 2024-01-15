@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance | MedNow</title>
+  <script src="punch.js"></script>
+  <style>
+    body {
+      background-image: url(attendance.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    *{
+        border: 0px;
+        margin: 0px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+	background-color: #02052f;
+	color: #fff;
+	padding: 20px;
+        }
+    
+    h1 {
+      color: #000000;
+      margin-right: 30px;
+    }
+    
+    .container {
+      margin-top: 50px;
+    }
+    
+    .button {
+      width: 500px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      margin-left: 330px;
+    }
+    .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  margin-left: 300px;
+  height: 100px;
+  margin-left: 150px;
+  }
+  form {
+  background-color: #3133a5c2;
+  width: 500px;
+  height: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: left;
+  margin-left: 300px;
+  
+ }
+ input[type="text"], input[type="password"] {
+  width: 500px;
+  padding: 12px 20px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: none;
+  border-color: #000000;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.clip-text {
+  background: url(cool-aesthetic.gif);
+  background-size: cover;
+  background-position: center;
+  
+  -webkit-background-clip: text;
+  color: transparent; // set to transparent, otherwise won't see the background
+  
+  width: 300px;
+  height: 100px;
+  box-sizing: border-box;
+  font-size: 58px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  flex-shrink: 0;
+}
+table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .punch-in, .punch-out {
+      cursor: pointer;
+      width: 200px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 2px;
+      margin-left: -5px;
+      margin-right: 30px;
+    }
+    .status-message {
+      margin-top: 16px;
+      font-weight: bold;
+    }
+    .form-container {
+      margin-top: 16px;
+    }
+    .form-container input[type="text"] {
+      width: 200px;
+      padding: 8px;
+      margin-right: 8px;
+    }
+    .form-container button {
+      padding: 8px 16px;
+      font-size: 30px;
+    }
+    h2 {
+        color: #000000;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <div class="container1">
+        <div class="clip-text">
+        MedNow Punch-In
+        </div>
+      </div>
+        </header>
+        </body>
+      
+        <br>
+  <h1>Attendance Punch-In System</h1>
+  <div class="container">
+    <form action="">
+      <h2>ATTENDANCE</h2>
+      <b><label>Employee Name && Employee ID</label></b>
+      <br>
+      <br>
+      <input type="text" placeholder="employee name" name="name" required id="employee-name">
+      <br>
+      <input type="text" placeholder="employee id" name="name" required id="employee-id">
+      <br>
+      <b><label>Arrival/Leave Time<label></b>
+      <input type="time" placeholder="Time" name="arrival time" required id="arrival">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="status-message">
+        <span id="status"></span>
+      </div>
+      <br>
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button class="punch-in" onclick="punchIn()">Punch In</button>
+  <button class="punch-out" onclick="punchOut()">Punch Out</button>
+  <div id="status"></div>
+  <br>
+  <br>
+  <br>
+  <h1>Attendance History</h1>
+  <br>
+  <br>
+  <table id="attendance-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Employee ID</th>
+        <th>Punch In</th>
+        <th>Punch Out</th>
+      </tr>
+    </thead>
+    <tbody id="attendance-body"></tbody>
+  </table>
+</body>
+</html>
